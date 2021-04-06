@@ -1,0 +1,31 @@
+body {
+    background-color: #282C34;
+    color: white;
+    font-family: system-ui, 'Helvetica Neue', sans-serif;
+}
+
+a {
+    color: salmon;
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 900;
+    opacity: 0.3;
+}
+
+.nav-menu {
+    float: right;
+}
+
+.nav-menu a {
+    margin: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
