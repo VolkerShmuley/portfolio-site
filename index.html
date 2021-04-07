@@ -6,27 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./resources/normalize.css">
     <link rel="stylesheet" href="./resources/style.css">
-    
     <title>My Portfolio Site</title>
 </head>
 <body>
     <header>
         <div class="container">
-            <span class="logo">Völker Shmüley.</span>
+            <span class="logo">Völker <span class="logo__highlight">Shmüley</span>.</span>
             <nav class="nav-menu">
                 <a href="#">About Me</a>
                 <a href="#">My Work</a>
                 <a href="#">Skills</a>
-                <a href="#">Contact Me</a>
+                <a href="./contact.html">Contact Me</a>
             </nav>
         </div>
     </header>
-    <section>
-        <div class="container">
+    <section class="section section--hero">
+        <div class="container container--hero">
             <h1>Hi, I'm Völker.</h1>
-            <p>This is my portfolio site.</p>
+            <p>This is my portfolio site. You can check out my work below.</p>
+            <div class="hero-buttons">
+                <a class="btn" href="contact.html">Contact Me</a>
+                <a class="btn btn--secondary" href="#my-work">My Work</a>
+            </div>
         </div>
     </section>
+    <section id="#my-work">
+        <div class="container">
+            <div class="mywork">
+                <div class="mywork__card">
+                    <img src="./resources/img/icon.png" alt="">
+                    <h3>Logofy</h3>
+                    <p>An application that generates logos using cool AI.</p>
+                    <div class="technology-row">
+                        <span class="inline-code">HTML</span>
+                        <span class="inline-code">CSS</span>
+                    </div>
+                </div>
+                <div class="mywork__card">
+                    <img src="./resources/img/icon.png" alt="">
+                    <h3>Good Beans</h3>
+                    <p>An application that generates logos using cool AI.</p>
+                    <div class="technology-row">
+                        <span class="inline-code">HTML</span>
+                        <span class="inline-code">CSS</span>
+                        <span class="inline-code">JS</span>
+                    </div>
+                </div>
+                <div class="mywork__card">
+                    <img src="./resources/img/icon.png" alt="">
+                    <h3>Appafy</h3>
+                    <p>An application that generates logos using cool AI.</p>
+                    <div class="technology-row">
+                        <span class="inline-code">HTML</span>
+                        <span class="inline-code">CSS</span>
+                        <span class="inline-code">JS</span>
+                    </div>
+                </div>
+                <div class="mywork__card">
+                    <img src="./resources/img/icon.png" alt="">
+                    <h3>Wizzer</h3>
+                    <p>An application that generates logos using cool AI.</p>
+                    <div class="technology-row">
+                        <span class="inline-code">JS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>Made with ❤️ by Völker.</p>
+        </div>
+    </footer>
     <script src="./resources/main.js"></script>
 </body>
 </html>
