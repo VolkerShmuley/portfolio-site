@@ -8,15 +8,19 @@
     <link rel="stylesheet" href="./resources/style.css">
     <title>My Portfolio Site</title>
 </head>
-<body>
+<body id="page-body">
     <header>
-        <div class="container">
+        <div class="container" id="test">
             <span class="logo">Völker <span class="logo__highlight">Shmüley</span>.</span>
             <nav class="nav-menu">
-                <a href="#">About Me</a>
-                <a href="#">My Work</a>
-                <a href="#">Skills</a>
-                <a href="./contact.html">Contact Me</a>
+                <a class="nav-link" href="#">About Me</a>
+                <a class="nav-link" href="#">My Work</a>
+                <a class="nav-link" href="#">Skills</a>
+                <a class="nav-link" href="./contact.html">Contact Me</a>
+                <div id="modeSwitch" class="mode-switch">
+                    <img class="mode-icon" id="light-mode" src="./resources/img/light-mode.svg" alt="">
+                    <img class="mode-icon" id="dark-mode" src="./resources/img/dark-mode.svg" alt="">
+                </div>
             </nav>
         </div>
     </header>

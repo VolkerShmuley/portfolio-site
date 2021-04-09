@@ -7,7 +7,7 @@ body {
 }
 
 a {
-    color: salmon;
+    color: white;
     transition: color 200ms ease-in-out;
 }
 
@@ -42,12 +42,15 @@ h6 {
 
 .nav-menu {
     float: right;
+    display: flex;
+    align-items: center;
 }
 
-.nav-menu a {
-    color: rgba(255, 255, 255, 0.3);
+.nav-link {
+    color: inherit;
     margin: 0 10px;
     text-decoration: none;
+    opacity: 0.7;
 }
 
 .nav-menu a:hover {
@@ -61,16 +64,13 @@ h1 {
     text-align: center;
 }
 
-p {
-    color: rgba(255, 255, 255, 0.6);
-}
-
 .section--hero {
     margin: 60px 0;
 }
 
 .section--hero p {
     font-size: 1.2em;
+    opacity: 0.7;
 }
 
 .btn {
@@ -90,6 +90,16 @@ p {
 .btn--secondary {
     background-color: rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.699);
+    padding: 16px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 16px 16px 0 0;
+    transition: opacity 200ms ease-in-out;
+}
+
+.btn--dark {
+    background-color: #282C34;
+    color: white;
 }
 
 .hero-buttons {
@@ -152,7 +162,8 @@ footer {
 }
 
 footer p {
-    color: rgba(255, 255, 255, 0.4);
+    /* color: rgba(255, 255, 255, 0.4); */
+    opacity: 0.4;
 }
 
 .contact-wrap {
@@ -163,4 +174,34 @@ footer p {
 .contact-footer {
     position: absolute;
     bottom: 0%; left: 0%; right: 0%;
+}
+
+.light-mode-text {
+    color: #282C34;
+}
+
+.light-mode-bg {
+    background-color: white;
+}
+
+.mode-switch {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-left: 8px;
+    cursor: pointer;
+    position: relative;
+    transition: opacity 200ms ease-in-out;
+}
+
+.mode-switch:hover {
+    opacity: 0.8;
+}
+
+.mode-icon {
+    position: absolute;
+}
+
+#dark-mode {
+    visibility: hidden;
 }
